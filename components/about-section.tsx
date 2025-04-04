@@ -10,7 +10,7 @@ import { motion } from "framer-motion"
 
 export function AboutSection() {
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, threshold: 0.2 })
+  const isInView = useInView(ref, { once: true, amount: 0.2 })
 
   return (
     <section className="py-16 bg-navy/5">

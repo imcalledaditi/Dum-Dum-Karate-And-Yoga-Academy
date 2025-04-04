@@ -11,7 +11,7 @@ import { motion, AnimatePresence } from "framer-motion"
 export function FindDojoSection() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, amount: 0.2 })
-  const [focusedIndex, setFocusedIndex] = useState(null)
+  const [focusedIndex, setFocusedIndex] = useState<number | null>(null)
   const [startIndex, setStartIndex] = useState(0)
 
   const dojoLocations = [

@@ -8,7 +8,7 @@ import Image from "next/image"
 
 export function WhyChooseSection() {
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, threshold: 0.2 })
+  const isInView = useInView(ref, { once: true, amount: 0.2 })
   const controls = useAnimation()
 
   useEffect(() => {
