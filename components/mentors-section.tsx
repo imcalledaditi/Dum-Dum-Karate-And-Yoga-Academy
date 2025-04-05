@@ -13,7 +13,7 @@ export function MentorsSection() {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-2 font-poppins">Our Team</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-2 font-poppins">Our Mentors</h2>
           <div className="w-20 h-1 bg-highlight mx-auto mb-6"></div>
           <p className="text-muted-foreground">
             Meet the dedicated masters who guide our students on their martial arts journey. Our team brings decades of
@@ -30,17 +30,17 @@ export function MentorsSection() {
               isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12",
             )}
           >
-            <h3 className="text-2xl font-bold text-primary mb-6 font-poppins text-center">Our Mentors</h3>
-            <div className="bg-card rounded-lg overflow-hidden shadow-xl">
+            <h3 className="text-2xl font-bold text-primary mb-6 font-poppins text-center">Our Mentor</h3>
+            <div className="bg-neutral-100/90 rounded-lg overflow-hidden shadow-xl">
               <div className="md:flex">
                 <div className="md:w-1/3 relative">
                   {/* Placeholder for TNK's image */}
                   <div className="h-80 md:h-full relative">
-                    <Image src="/placeholder.svg?height=400&width=300" alt="TNK Sensei" fill className="object-cover" />
+                    <Image src="/tarak.jpg?height=400&width=300" alt="TNK Sensei" fill className="object-cover" />
                   </div>
                 </div>
                 <div className="md:w-2/3 p-6 md:p-8">
-                  <h3 className="text-2xl font-bold text-primary mb-2 font-poppins">TNK Sensei</h3>
+                  <h3 className="text-2xl font-bold text-primary mb-2 font-poppins">Shihan Tarak Nath Sardar</h3>
                   <div className="w-16 h-1 bg-highlight mb-4"></div>
                   <p className="text-muted-foreground mb-4">
                     With over 30 years of experience in traditional Karate, TNK Sensei has dedicated his life to
@@ -72,14 +72,14 @@ export function MentorsSection() {
               isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12",
             )}
           >
-            <h3 className="text-2xl font-bold text-primary mb-6 font-poppins text-center">Our Instructors</h3>
-            <div className="bg-card rounded-lg overflow-hidden shadow-xl">
+            <h3 className="text-2xl font-bold text-primary mb-6 font-poppins text-center">Our Instructor</h3>
+            <div className="bg-neutral-100/90 rounded-lg overflow-hidden shadow-xl">
               <div className="md:flex">
                 <div className="md:w-1/3 relative">
                   <div className="h-80 md:h-full relative">
                     <Image
-                      src="/placeholder.svg?height=400&width=300"
-                      alt="Sujata Roy Sensei"
+                      src="/sujata.jpg?height=400&width=300"
+                      alt="Sensei Sujata Roy "
                       fill
                       className="object-cover"
                     />

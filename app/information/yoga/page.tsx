@@ -28,7 +28,7 @@ const staggerContainer = {
 export default function YogaInformationPage() {
   const controls = useAnimation()
   const ref = useRef(null)
-  const inView = useInView(ref, { once: true, threshold: 0.2 })
+  const inView = useInView(ref, { once: true })
 
   useEffect(() => {
     if (inView) {
@@ -71,7 +71,7 @@ export default function YogaInformationPage() {
             className="relative h-96 w-full mb-12 rounded-xl overflow-hidden shadow-2xl"
           >
             <Image
-              src="/placeholder.svg?height=600&width=1200"
+              src="/information/yoga1.jpg?height=600&width=1200"
               alt="Yoga practice"
               fill
               className="object-cover"
@@ -138,7 +138,7 @@ export default function YogaInformationPage() {
                         className="relative z-10 rounded-lg overflow-hidden shadow-lg"
                       >
                         <Image
-                          src="/placeholder.svg?height=400&width=600"
+                          src="/information/yoga2.jpg?height=400&width=600"
                           alt="Yoga meditation"
                           width={600}
                           height={400}
@@ -300,7 +300,7 @@ export default function YogaInformationPage() {
                     </p>
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                       {[
-                        "Flexibility for higher kicks and deeper stances",
+                        "Flexibility for kicks and stances",
                         "Balance for more stable techniques",
                         "Core strength for powerful movements",
                         "Breath control for better endurance",
@@ -450,7 +450,7 @@ export default function YogaInformationPage() {
                       {
                         title: "Iyengar Yoga",
                         description:
-                          "Emphasizes precise alignment and the use of props (like blocks and straps) to support proper form, making it excellent for deepening your practice and addressing injuries.",
+                          "Emphasizes precise alignment and the use of props to support proper form, making it excellent for deepening your practice and addressing injuries.",
                         image: "/placeholder.svg?height=300&width=500",
                       },
                     ].map((style, i) => (

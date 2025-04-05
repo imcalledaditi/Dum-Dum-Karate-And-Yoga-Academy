@@ -24,7 +24,7 @@ const staggerContainer = {
 export default function YogaOriginPage() {
   const controls = useAnimation()
   const ref = useRef(null)
-  const inView = useInView(ref, { once: true, threshold: 0.2 })
+  const inView = useInView(ref, { once: true, amount: 0.2 })
 
   useEffect(() => {
     if (inView) {
@@ -58,7 +58,7 @@ export default function YogaOriginPage() {
 
             <motion.div variants={fadeIn} className="relative h-80 w-full mb-12 rounded-xl overflow-hidden shadow-2xl">
               <Image
-                src="/placeholder.svg?height=400&width=1000"
+                src="/origin/originy1.jpg?height=400&width=1000"
                 alt="Ancient yoga practitioners in meditation"
                 fill
                 className="object-cover"

@@ -15,7 +15,7 @@ export function CTASection() {
     <section
       className="py-20 relative overflow-hidden"
       style={{
-        backgroundImage: "url('/placeholder.svg?height=600&width=1920')",
+        backgroundImage: "url('/schedule.jpg?height=600&width=1920')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -31,19 +31,19 @@ export function CTASection() {
           )}
         >
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 font-poppins">
-            Begin Your Martial Arts Journey Today
+            Begin Your Karate & Yoga Journey Today
           </h2>
           <p className="text-xl text-white/90 mb-8">
             Take the first step towards mastering the art of self-discipline, physical fitness, and mental strength.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact">
-              <Button size="lg" className="bg-secondary text-navy hover:bg-secondary/90">
-                Schedule a Free Trial Class
+              <Button size="lg" className="bg-secondary text-navy  border-white hover:bg-secondary/90">
+                Schedule a Class
               </Button>
             </Link>
             <Link href="/schedule">
-              <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10">
+              <Button size="lg" variant="outline" className="bg-secondary hover:bg-secondary/90">
                 View Class Schedule
               </Button>
             </Link>

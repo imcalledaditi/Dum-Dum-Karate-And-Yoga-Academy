@@ -59,7 +59,7 @@ export function Navbar() {
         <Link href="/" className="flex items-center gap-2">
           <div className="relative h-12 w-12 overflow-hidden">
             <Image
-              src="/placeholder.svg?height=48&width=48"
+              src="/DumDumlogo.png?height=48&width=48"
               alt="Dum Dum Karate Logo"
               width={48}
               height={48}

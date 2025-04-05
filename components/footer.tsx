@@ -13,7 +13,7 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <div className="relative h-10 w-10 overflow-hidden">
-                <Image src="/placeholder.svg?height=40&width=40" alt="Dum Dum Karate Logo" width={40} height={40} />
+                <Image src="/DumDumlogo.png?height=40&width=40" alt="Dum Dum Karate Logo" width={40} height={40} />
               </div>
               <div>
                 <h3 className="font-bold text-lg leading-tight">Dum Dum Karate</h3>
@@ -21,8 +21,7 @@ export function Footer() {
               </div>
             </div>
             <p className="text-white/70 mb-4">
-              Kolkata's premier martial arts academy offering world-class training in Karate, Yoga, and self-defense
-              techniques since 1978.
+            Kolkata's premier training academy offering world-class programs in Karate, Yoga, and self-defense techniques since 2018.
             </p>
             <div className="flex gap-2 mb-4">
               <Link href="#" className="p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors">

@@ -8,6 +8,7 @@ import { motion, useInView, useAnimation } from "framer-motion"
 import { Target, Heart, Users, RatioIcon as Balance, ChevronLeft, ChevronRight } from "lucide-react"
 import { cn } from "@/lib/utils"
 
+
 export default function AboutPage() {
   const storyRef = useRef(null)
   const philosophyRef = useRef(null)
@@ -309,7 +310,7 @@ export default function AboutPage() {
                   <div className="w-20 h-1 bg-orange mb-6"></div>
 
                   <p className="text-muted-foreground mb-6">
-                    At Dum Dum, we believe in the complementary nature of karate and yoga. While karate builds strength,
+                    At Dum Dum Karate & Yoga Academy, we believe in the complementary nature of karate and yoga. While karate builds strength,
                     agility, and external discipline, yoga nurtures flexibility, balance, and internal harmony.
                     Together, they create a comprehensive practice that addresses all aspects of human potential.
                   </p>
@@ -331,8 +332,8 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Meet Our Founder Section with Sakura Video Background */}
-      <section className="py-20 bg-white relative overflow-hidden">
+            {/* Meet Our Founder Section with Sakura Video Background */}
+            <section className="py-20 bg-white relative overflow-hidden">
         {/* Sakura Video Background */}
         <div className="absolute inset-0 w-full h-full overflow-hidden z-0">
           <video
@@ -340,7 +341,7 @@ export default function AboutPage() {
             loop
             muted
             playsInline
-            className="absolute w-full h-full object-cover opacity-20"
+            className="absolute w-full h-full object-cover opacity-40" // <-- Adjust this opacity for the background video
             style={{ objectFit: "cover" }}
           >
             <source
@@ -365,7 +366,7 @@ export default function AboutPage() {
 
             <motion.div
               variants={fadeIn}
-              className="bg-blue/5 rounded-lg shadow-xl overflow-hidden relative z-10 opacity-90"
+              className="bg-white rounded-lg shadow-xl overflow-hidden relative z-10" // Changed from semi-transparent to solid background
             >
               <div className="md:flex">
                 <div className="md:w-1/3 relative">
@@ -385,20 +386,20 @@ export default function AboutPage() {
                 </div>
                 <div className="md:w-2/3 p-8">
                   <div className="hidden md:block">
-                    <h3 className="text-3xl font-bold text-red mb-2">TNK Sensei</h3>
+                    <h3 className="text-3xl font-bold text-red mb-2">Sensei Sujata Roy</h3>
                     <p className="text-lg text-orange font-medium mb-4">Founder & Chief Instructor</p>
                     <div className="w-20 h-1 bg-orange mb-6"></div>
                   </div>
 
                   <p className="text-muted-foreground mb-6">
-                    With over 30 years of experience in traditional Karate, TNK Sensei has dedicated his life to
-                    mastering and teaching the art. His journey began in Japan where he trained under several renowned
+                    With over 10 years of experience in traditional Karate, Sensei Sujata Roy has dedicated his life to
+                    mastering and teaching the art. Her journey began in India where he trained under several renowned
                     masters before bringing his knowledge and passion to India.
                   </p>
 
                   <p className="text-muted-foreground mb-6">
-                    As the founder of Dum Dum Karate & Yoga Academy, he has trained thousands of students, many of whom
-                    have gone on to become accomplished martial artists and instructors themselves. His teaching
+                    As the founder of Dum Dum Karate & Yoga Academy, she has trained hundreds of students, many of whom
+                    have gone on to become accomplished martial artists and instructors themselves. Her teaching
                     philosophy emphasizes not just technical excellence, but also the development of character,
                     discipline, and respect.
                   </p>
@@ -415,6 +416,7 @@ export default function AboutPage() {
           </motion.div>
         </div>
       </section>
+
 
       {/* Our Core Values Section */}
       <section className="py-20 bg-navy/5">
@@ -514,15 +516,15 @@ export default function AboutPage() {
 
               <div className="grid md:grid-cols-3 gap-8">
                 <motion.div variants={fadeIn} className="relative rounded-lg overflow-hidden group">
-                  <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-xwlyWmEsm1KI08iPYIp44e2ilk2cau.png"
-                    alt="Traditional Dojo"
-                    width={600}
-                    height={400}
-                    className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
+                <Image
+                  src="/images/room1.jpg" // Use the path relative to the public directory
+                  alt="Traditional Dojo"
+                  width={600}
+                  height={400}
+                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-6">
-                    <h3 className="text-2xl font-bold text-white mb-2">Traditional Dojo</h3>
+                    <h3 className="text-2xl font-bold text-white mb-2">Dojo/Yoga Studio</h3>
                     <p className="text-white/80 hidden group-hover:block transition-all duration-300">
                       Our main training hall features traditional wooden floors, mirrors, and authentic Japanese décor,
                       creating the perfect environment for martial arts practice.
@@ -539,7 +541,7 @@ export default function AboutPage() {
                     className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-6">
-                    <h3 className="text-2xl font-bold text-white mb-2">Yoga Studio</h3>
+                    <h3 className="text-2xl font-bold text-white mb-2">Gym</h3>
                     <p className="text-white/80 hidden group-hover:block transition-all duration-300">
                       Our serene yoga studio offers a peaceful sanctuary with bamboo floors, natural lighting, and
                       calming aesthetics for optimal practice.
@@ -556,7 +558,7 @@ export default function AboutPage() {
                     className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-6">
-                    <h3 className="text-2xl font-bold text-white mb-2">Meditation Garden</h3>
+                    <h3 className="text-2xl font-bold text-white mb-2">Karate Field</h3>
                     <p className="text-white/80 hidden group-hover:block transition-all duration-300">
                       Our outdoor meditation space combines Japanese and Indian design elements, creating a serene
                       environment for mindfulness practice.

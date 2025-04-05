@@ -9,6 +9,9 @@ import { cn } from "@/lib/utils"
 import Link from "next/link"
 import { motion } from "framer-motion"
 
+
+
+
 export function ProgramsSection() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, amount: 0.1 })
@@ -39,7 +42,7 @@ export function ProgramsSection() {
       title: "Karate",
       description:
         "Traditional Shotokan Karate training focusing on kihon (basics), kata (forms), and kumite (sparring).",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/progkarate.jpg?height=300&width=400", // Ensure this is inside 'public/'
       levels: ["Beginner", "Intermediate", "Advanced", "Black Belt"],
       link: "/programs/karate",
     },
@@ -47,14 +50,14 @@ export function ProgramsSection() {
       title: "Yoga",
       description:
         "Holistic yoga practice combining asanas, pranayama, and meditation for physical and mental wellbeing.",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/progyoga.jpg?height=300&width=400",
       levels: ["Beginner", "Intermediate", "Advanced", "Therapeutic"],
       link: "/programs/yoga",
     },
     {
       title: "Self-Defense",
       description: "Practical self-defense techniques for real-world situations, building confidence and awareness.",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/progself.jpg?height=300&width=400",
       levels: ["Basic", "Intermediate", "Advanced", "Specialized"],
       link: "/programs/self-defense",
     },
@@ -69,14 +72,14 @@ export function ProgramsSection() {
     {
       title: "School Project",
       description: "We are associated with multiple schools to impart martial arts and yoga training to students.",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/progschool.jpg?height=300&width=400",
       levels: ["Vivekananda School", "St. Xavier's Institution", "Modern High School", "Ramakrishna Mission"],
       link: "/programs/school-project",
     },
     {
       title: "Weapon Training",
       description: "Comprehensive weapons training program for serious students who want to train at a higher level.",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/progweapon.jpg?height=300&width=400",
       levels: ["Cane & Sai", "Bo & Tonfa", "Nunchaku & Kama", "Sword & Arnis"],
       link: "/programs/weapon-training",
     },

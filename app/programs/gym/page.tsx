@@ -5,9 +5,10 @@ import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import Image from "next/image"
 import { motion, useInView, useAnimation } from "framer-motion"
-import { Button } from "@/components/ui/button"
-import { ChevronRight, Dumbbell, Clock, Users, Zap } from "lucide-react"
 import Link from "next/link"
+import { ChevronRight } from "lucide-react"
+import { cn } from "@/lib/utils"
+
 
 export default function GymProgram() {
   const ref = useRef(null)

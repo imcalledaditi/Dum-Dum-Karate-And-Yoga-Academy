@@ -28,7 +28,7 @@ const staggerContainer = {
 export default function KarateInformationPage() {
   const controls = useAnimation()
   const ref = useRef(null)
-  const inView = useInView(ref, { once: true, threshold: 0.2 })
+  const inView = useInView(ref, { once: true })
 
   useEffect(() => {
     if (inView) {
@@ -72,7 +72,7 @@ export default function KarateInformationPage() {
             className="relative h-96 w-full mb-12 rounded-xl overflow-hidden shadow-2xl"
           >
             <Image
-              src="/placeholder.svg?height=600&width=1200"
+               src="/information/karate1.jpg?height=600&width=1200"
               alt="Karate training"
               fill
               className="object-cover"
@@ -139,7 +139,7 @@ export default function KarateInformationPage() {
                         className="relative z-10 rounded-lg overflow-hidden shadow-lg"
                       >
                         <Image
-                          src="/placeholder.svg?height=400&width=600"
+                          src="/information/karate2.jpg?height=400&width=600"
                           alt="Karate kata demonstration"
                           width={600}
                           height={400}
@@ -183,7 +183,7 @@ export default function KarateInformationPage() {
                         className="relative z-10 rounded-lg overflow-hidden shadow-lg"
                       >
                         <Image
-                          src="/placeholder.svg?height=400&width=600"
+                          src="/information/Shotokan.jpg?height=400&width=600"
                           alt="Shotokan Karate training"
                           width={600}
                           height={400}
@@ -224,7 +224,7 @@ export default function KarateInformationPage() {
                       <div className="absolute inset-0 bg-highlight/10 transform -rotate-3 rounded-lg"></div>
                       <div className="relative rounded-lg overflow-hidden z-10">
                         <Image
-                          src="/placeholder.svg?height=600&width=400"
+                          src="/information/gichin-funakoshi.jpg?height=600&width=400"
                           alt="Gichin Funakoshi - Founder of Shotokan Karate"
                           width={400}
                           height={600}
@@ -294,7 +294,7 @@ export default function KarateInformationPage() {
 
                   <div className="relative h-64 md:h-96 w-full rounded-xl overflow-hidden shadow-lg mb-8">
                     <Image
-                      src="/placeholder.svg?height=500&width=1200"
+                      src="/information/instk.jpg?height=500&width=1200"
                       alt="Karate class training"
                       fill
                       className="object-cover"
@@ -398,14 +398,14 @@ export default function KarateInformationPage() {
                         title: "Children (5-12 years)",
                         description:
                           "Focus on basic techniques, coordination, discipline, and fun learning experiences.",
-                        image: "/placeholder.svg?height=300&width=400",
+                        image: "/information/child.jpg?height=300&width=400",
                         color: "from-blue-50 to-transparent",
                       },
                       {
                         title: "Teens (13-17 years)",
                         description:
                           "More advanced techniques, kata, and controlled sparring with emphasis on positive development.",
-                        image: "/placeholder.svg?height=300&width=400",
+                        image: "/information/teen.jpg?height=300&width=400",
                         color: "from-green-50 to-transparent",
                       },
                       {
@@ -482,10 +482,10 @@ export default function KarateInformationPage() {
                           },
                           { color: "bg-yellow-300", name: "Yellow Belt", rank: "9th Kyu", level: "" },
                           { color: "bg-orange-400", name: "Orange Belt", rank: "8th Kyu", level: "" },
-                          { color: "bg-green-500", name: "Green Belt", rank: "7th Kyu", level: "" },
-                          { color: "bg-blue-500", name: "Blue Belt", rank: "6th Kyu", level: "" },
-                          { color: "bg-purple-500", name: "Purple Belt", rank: "5th Kyu", level: "" },
-                          { color: "bg-amber-700", name: "Brown Belt", rank: "4th-1st Kyu", level: "" },
+                          { color: "bg-blue-500", name: " Blue Belt", rank: "7th Kyu", level: "" },
+                          { color: "bg-green-500", name: "Green Belt", rank: "6th Kyu", level: "" },
+                          { color: "bg-purple-500", name: "Purple Belt", rank: "5th-4th Kyu", level: "" },
+                          { color: "bg-amber-700", name: "Brown Belt", rank: "3th-1st Kyu", level: "" },
                           { color: "bg-black", name: "Black Belt", rank: "1st Dan and above", level: "Advanced" },
                         ].map((belt, i) => (
                           <motion.div

@@ -8,6 +8,9 @@ import { ChevronRight } from "lucide-react"
 import Link from "next/link"
 import { motion } from "framer-motion"
 
+import aboutOurAcademy from '../images/aboutouracademy.jpg';
+
+
 export function AboutSection() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, amount: 0.2 })
@@ -31,7 +34,7 @@ export function AboutSection() {
             </p>
             <div className="grid grid-cols-2 gap-4 mb-8">
               <div className="bg-card p-4 rounded-lg shadow-sm">
-                <h3 className="font-bold text-primary text-xl">5000+</h3>
+                <h3 className="font-bold text-primary text-xl">500+</h3>
                 <p className="text-sm text-muted-foreground">Students Trained</p>
               </div>
               <div className="bg-card p-4 rounded-lg shadow-sm">
@@ -56,13 +59,14 @@ export function AboutSection() {
             <div className="absolute inset-0 bg-primary/10 transform rotate-3 rounded-lg"></div>
             <div className="absolute inset-0 bg-highlight/10 transform -rotate-3 rounded-lg"></div>
             <div className="relative rounded-lg overflow-hidden z-10">
-              <Image
-                src="/placeholder.svg?height=400&width=600"
-                alt="Karate training at Dum Dum Academy"
-                width={600}
-                height={400}
-                className="w-full h-auto"
-              />
+            <Image
+              src={aboutOurAcademy}
+              alt="Karate training at Dum Dum Academy"
+              width={600}
+              height={400}
+              className="w-full h-auto"
+            />
+
             </div>
           </motion.div>
         </div>

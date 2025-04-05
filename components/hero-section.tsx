@@ -11,6 +11,8 @@ export function HeroSection() {
   const ref = useRef(null)
   const inView = useInView(ref, { once: true })
 
+  
+
   useEffect(() => {
     if (inView) {
       controls.start("visible")
@@ -55,7 +57,7 @@ export function HeroSection() {
         <motion.div ref={ref} variants={containerVariants} initial="hidden" animate={controls} className="max-w-3xl">
           <motion.div variants={itemVariants} className="mb-2">
             <span className="inline-block bg-secondary px-3 py-1 rounded-full text-sm font-medium text-primary">
-              Established 1978
+              Established 2018
             </span>
           </motion.div>
 
@@ -68,7 +70,7 @@ export function HeroSection() {
           </motion.h1>
 
           <motion.p variants={itemVariants} className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl text-shadow">
-            Join Kolkata's premier martial arts academy offering world-class training in Karate, Yoga, and self-defense
+            Join Kolkata's premier academy offering world-class training in Karate, Yoga, and self-defense
             techniques for all ages and skill levels.
           </motion.p>
 
