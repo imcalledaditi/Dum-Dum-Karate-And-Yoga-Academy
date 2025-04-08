@@ -10,6 +10,8 @@ import { ChevronRight, Award, Shield, Clock, Users } from "lucide-react"
 import Link from "next/link"
 import { cn } from "@/lib/utils"
 
+
+
 export default function KarateProgram() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, threshold: 0.2 })
@@ -153,7 +155,7 @@ export default function KarateProgram() {
                     <div className="absolute inset-0 bg-highlight/10 transform -rotate-3 rounded-lg"></div>
                     <div className="relative rounded-lg overflow-hidden z-10">
                       <Image
-                        src="/placeholder.svg?height=600&width=800"
+                        src="/program/karateprog.jpg?height=600&width=800"
                         alt="Karate training session"
                         width={800}
                         height={600}
@@ -172,12 +174,12 @@ export default function KarateProgram() {
                 <div className="grid md:grid-cols-3 gap-8">
                   {[
                     {
-                      title: "Little Dragons (Ages 4-7)",
+                      title: "Little Karate-Ka (Ages 4-7)",
                       description:
-                        "Our Little Dragons program introduces young children to martial arts through fun, engaging activities that develop coordination, focus, and basic karate techniques. Classes emphasize respect, listening skills, and positive social interaction.",
+                        "Our Little Karate-Ka program introduces young children to karate through fun, engaging activities that develop coordination, focus, and basic karate techniques. Classes emphasize respect, listening skills, and positive social interaction.",
                       image: "/placeholder.svg?height=300&width=400",
                       features: [
-                        "30-45 minute classes",
+                        "2 hour classes",
                         "Parent participation welcome",
                         "Focus on motor skills",
                         "Fun games and activities",
@@ -189,7 +191,7 @@ export default function KarateProgram() {
                         "The Youth Program builds on fundamental skills while introducing more advanced techniques and kata. Students develop greater discipline, confidence, and physical fitness while learning effective self-defense in a safe, supportive environment.",
                       image: "/placeholder.svg?height=300&width=400",
                       features: [
-                        "45-60 minute classes",
+                        "2 hour classes",
                         "Belt progression system",
                         "Light controlled sparring",
                         "Character development",
@@ -201,7 +203,7 @@ export default function KarateProgram() {
                         "Our Teen & Adult Program offers comprehensive training in traditional Shotokan Karate, including advanced kata, kumite, and self-defense applications. Classes provide an excellent workout while developing mental focus and stress reduction.",
                       image: "/placeholder.svg?height=300&width=400",
                       features: [
-                        "60-90 minute classes",
+                        "2 hour classes",
                         "Competition opportunities",
                         "Advanced techniques",
                         "Physical conditioning",
@@ -262,10 +264,10 @@ export default function KarateProgram() {
                       },
                       { color: "bg-yellow-300", name: "Yellow Belt", rank: "9th Kyu", level: "" },
                       { color: "bg-orange-400", name: "Orange Belt", rank: "8th Kyu", level: "" },
-                      { color: "bg-green-500", name: "Green Belt", rank: "7th Kyu", level: "" },
-                      { color: "bg-blue-500", name: "Blue Belt", rank: "6th Kyu", level: "" },
-                      { color: "bg-purple-500", name: "Purple Belt", rank: "5th Kyu", level: "" },
-                      { color: "bg-amber-700", name: "Brown Belt", rank: "4th-1st Kyu", level: "" },
+                      { color: "bg-blue-500", name: " Blue Belt", rank: "7th Kyu", level: "" },
+                      { color: "bg-green-500", name: "Green Belt", rank: "6th Kyu", level: "" },
+                      { color: "bg-purple-500", name: "Purple Belt", rank: "5th-4th Kyu", level: "" },
+                      { color: "bg-amber-700", name: "Brown Belt", rank: "3th-1st Kyu", level: "" },
                       { color: "bg-black", name: "Black Belt", rank: "1st Dan and above", level: "Advanced" },
                     ].map((belt, i) => (
                       <motion.div

@@ -79,7 +79,7 @@ export function ProgramsSection() {
     {
       title: "Weapon Training",
       description: "Comprehensive weapons training program for serious students who want to train at a higher level.",
-      image: "/progweapon.jpg?height=300&width=400",
+      image: "/program/weapon/idkk.jpg?height=300&width=400",
       levels: ["Cane & Sai", "Bo & Tonfa", "Nunchaku & Kama", "Sword & Arnis"],
       link: "/programs/weapon-training",
     },

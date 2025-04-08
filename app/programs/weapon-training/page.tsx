@@ -102,16 +102,11 @@ export default function WeaponTrainingProgram() {
                     <div className="w-20 h-1 bg-highlight mb-6"></div>
 
                     <p className="text-muted-foreground mb-6">
-                      Our Weapons Training Program is designed specifically for the serious student, age 8 to adult, who
-                      has the talent, desire, and ability to train at a higher level. This specialized training builds
-                      upon the foundation of empty-hand techniques, adding a new dimension to martial arts practice.
+                    Our Weapons Training Program is designed for serious students, ages 6 to adult, who have the talent, desire, and commitment to train at a higher level. This advanced program builds upon the foundation of empty-hand Karate techniques, adding depth and versatility to martial arts practice. Each weapon offers its own set of techniques, challenges, and history, helping students develop greater focus, coordination, and discipline.
                     </p>
 
                     <p className="text-muted-foreground mb-6">
-                      Premier Weapons Club students are trained in a comprehensive weapons program that includes your
-                      choice of nine different weapons with specialized training once each week outside regular martial
-                      arts class. Each weapon has its own unique characteristics, history, and techniques, providing
-                      students with a well-rounded martial arts education.
+                    While Karate is best known for its empty-handed combat, certain styles—especially those with Okinawan roots—also include Kobudo, the traditional art of weapons training. Kobudo introduces classical tools such as the Bo, Nunchaku, Sai, Eku/Hanbo, Tonfa and Kama, each with unique historical significance and tactical application. Incorporating these weapons not only preserves ancient martial traditions but also broadens the student’s skill set, offering a more complete and culturally rich martial arts education.
                     </p>
 
                     <div className="grid grid-cols-2 gap-4 mb-6">
@@ -119,7 +114,7 @@ export default function WeaponTrainingProgram() {
                         <Sword className="h-5 w-5 text-highlight shrink-0 mt-1" />
                         <div>
                           <h3 className="font-medium text-primary">Traditional Weapons</h3>
-                          <p className="text-sm text-muted-foreground">Nine different weapons to master</p>
+                          <p className="text-sm text-muted-foreground">Six different weapons to master</p>
                         </div>
                       </div>
                       <div className="flex items-start gap-3">
@@ -158,7 +153,7 @@ export default function WeaponTrainingProgram() {
                     <div className="absolute inset-0 bg-highlight/10 transform -rotate-3 rounded-lg"></div>
                     <div className="relative rounded-lg overflow-hidden z-10">
                       <Image
-                        src="/placeholder.svg?height=600&width=800"
+                        src="/program/weapon/weapon1.jpg?height=600&width=800"
                         alt="Weapons training demonstration"
                         width={800}
                         height={600}
@@ -179,20 +174,20 @@ export default function WeaponTrainingProgram() {
                     {
                       title: "Short Weapons",
                       description: "Short-range weapons that require close combat techniques and precise movements.",
-                      weapons: ["Sai", "Kama", "Tonfa", "Fan"],
+                      weapons: ["Sai", "Kama", "Tonfa"],
                       image: "/placeholder.svg?height=300&width=400",
                     },
                     {
                       title: "Medium Weapons",
                       description: "Versatile weapons that can be used at various distances with different techniques.",
-                      weapons: ["Nunchaku", "Cane", "Arnis"],
+                      weapons: ["Nunchaku", "Eku/Hanbo"],
                       image: "/placeholder.svg?height=300&width=400",
                     },
                     {
                       title: "Long Weapons",
                       description:
                         "Long-range weapons that provide reach advantage and require full-body coordination.",
-                      weapons: ["Bo", "Sword"],
+                      weapons: ["Bo"],
                       image: "/placeholder.svg?height=300&width=400",
                     },
                   ].map((category, index) => (
@@ -242,34 +237,13 @@ export default function WeaponTrainingProgram() {
                       description: "A six-foot staff that develops full-body coordination and power generation.",
                       origin: "Okinawa, Japan",
                       difficulty: "Intermediate",
-                      image: "/placeholder.svg?height=300&width=400",
+                      image: "/program/weapon/Bobg.png?height=300&width=400",
                     },
                     {
-                      name: "Sai",
-                      description: "Metal trident-shaped weapons used in pairs for blocking, striking, and trapping.",
+                      name: "Eku/Hanbo",
+                      description: "The Eku, a traditional boat oar, and the Hanbo, a three-foot staff, both enhance striking, sweeping, and blocking techniques.",
                       origin: "Okinawa, Japan",
-                      difficulty: "Advanced",
-                      image: "/placeholder.svg?height=300&width=400",
-                    },
-                    {
-                      name: "Nunchaku",
-                      description: "Two sticks connected by a chain or rope, requiring dexterity and coordination.",
-                      origin: "Okinawa, Japan",
-                      difficulty: "Advanced",
-                      image: "/placeholder.svg?height=300&width=400",
-                    },
-                    {
-                      name: "Tonfa",
-                      description: "L-shaped wooden weapons used in pairs, originally derived from mill handles.",
-                      origin: "Okinawa, Japan",
-                      difficulty: "Intermediate",
-                      image: "/placeholder.svg?height=300&width=400",
-                    },
-                    {
-                      name: "Sword",
-                      description: "Traditional Japanese sword techniques focusing on precision and form.",
-                      origin: "Japan",
-                      difficulty: "Advanced",
+                      difficulty: "Intermediate",               
                       image: "/placeholder.svg?height=300&width=400",
                     },
                     {
@@ -277,29 +251,32 @@ export default function WeaponTrainingProgram() {
                       description: "Sickle-shaped weapons used in pairs, combining cutting and hooking techniques.",
                       origin: "Okinawa, Japan",
                       difficulty: "Advanced",
-                      image: "/placeholder.svg?height=300&width=400",
+                      image: "/program/weapon/kama-removebg-preview.png?height=300&width=400",
                     },
                     {
-                      name: "Arnis",
-                      description: "Filipino martial art using rattan sticks for striking, blocking, and disarming.",
-                      origin: "Philippines",
+                      name: "Nunchaku",
+                      description: "Two sticks connected by a chain or rope, requiring dexterity and coordination.",
+                      origin: "Okinawa, Japan",
+                      difficulty: "Advanced",
+                      image: "/program/weapon/nanchaks-removebg-preview.png?height=300&width=400",
+                    },
+                    {
+                      name: "Sai",
+                      description: "Three-pronged metal weapons used for blocking, trapping, and stabbing techniques.",
+                      origin: "Okinawa, Japan",
+                      difficulty: "Intermediate"
+                    },
+                  
+                    {
+                      name: "Tonfa",
+                      description: "L-shaped wooden weapons used in pairs, originally derived from mill handles.",
+                      origin: "Okinawa, Japan",
                       difficulty: "Intermediate",
-                      image: "/placeholder.svg?height=300&width=400",
+                      image: "/program/weapon/tonfa-removebg-preview.png?height=300&width=400",
                     },
-                    {
-                      name: "Fan",
-                      description: "Traditional folding fans used as defensive weapons with graceful techniques.",
-                      origin: "Japan/China",
-                      difficulty: "Intermediate",
-                      image: "/placeholder.svg?height=300&width=400",
-                    },
-                    {
-                      name: "Cane",
-                      description: "Walking cane techniques for practical self-defense in everyday situations.",
-                      origin: "Various",
-                      difficulty: "Beginner",
-                      image: "/placeholder.svg?height=300&width=400",
-                    },
+                   
+                    
+                    
                   ].map((weapon, index) => (
                     <motion.div
                       key={weapon.name}
